@@ -9,5 +9,5 @@ all:
 	${RPMBUILD} -ba astrometry-net.spec
 
 	mv build/*/*.rpm .
-	rm -rf build
+	rm -rf build *.src.rpm
 

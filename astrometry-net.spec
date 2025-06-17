@@ -1,6 +1,6 @@
 Name:      astrometry-net
 Version:   0.97
-Release:   0
+Release:   1%{dist}
 Url:       https://github.com/rockit-astro/astrometry-net-packaging
 Summary:   Astrometry.net repackaged for Rocky Linux
 License:   BSD
