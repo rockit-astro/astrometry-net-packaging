@@ -1,7 +1,7 @@
 Name:      astrometry-net
-Version:   0.93
+Version:   0.97
 Release:   0
-Url:       https://github.com/warwick-one-metre/astrometry-rpm
+Url:       https://github.com/rockit-astro/astrometry-net-packaging
 Summary:   Astrometry.net repackaged for Rocky Linux
 License:   BSD
 Group:     Unspecified
@@ -15,7 +15,7 @@ Astrometry.net repackaged for Rocky Linux.
 
 %build
 
-tar xf %{_sourcedir}/astrometry.net-0.93.tar.gz --strip-components=1
+tar xf %{_sourcedir}/astrometry.net-0.97.tar.gz --strip-components=1
 
 make
 make install INSTALL_DIR=%{buildroot}/%{_prefix} LIB_INSTALL_DIR=%{buildroot}/%{_libdir} ETC_INSTALL_DIR=%{buildroot}/%{_sysconfdir} DATA_INSTALL_DIR=%{buildroot}/%{_sysconfdir}/astrometry DATA_FINAL_DIR=%{_sysconfdir}/astrometry PY_BASE_INSTALL_DIR=%{buildroot}/%{python3_sitearch}/astrometry
